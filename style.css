@@ -1,0 +1,493 @@
+/* Add any CSS you need to this file. */
+body {
+  margin: 0%;
+  overflow: auto;
+}
+header {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  background: linear-gradient(rgb(247, 247, 247), rgb(190, 190, 190));
+  color: darkslategray;
+  top: 0;
+  margin: 0%;
+  display: block;
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  z-index: 1;
+}
+
+p.logoHeader {
+  display: inline;
+  font-size: 30px;
+}
+nav.navMenu {
+  display: none;
+  float: left;
+  padding-right: 10px;
+}
+nav.category {
+  display: inline;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: rgb(255, 238, 238);
+  padding-bottom: 2px;
+  margin-left: 20px;
+}
+
+nav.category ul {
+  margin-top: 0%;
+  display: inline;
+  margin-left: -33px;
+}
+nav.category ul li {
+  vertical-align: middle;
+  margin-top: 0%;
+  display: inline;
+  padding: 11px;
+
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  color: darkslategray;
+  font-size: medium;
+  cursor: pointer;
+}
+
+nav.category ul li a:link {
+  text-decoration: none;
+  color: darkslategray;
+}
+nav.category ul li a:visited {
+  text-decoration: none;
+  color: darkslategray;
+}
+div.searchDiv {
+  display: inline;
+  vertical-align: middle;
+  padding: 20px;
+}
+input#search {
+  border-color: teal;
+  border-radius: 7px;
+  display: inline;
+  vertical-align: middle;
+}
+li.searchButton {
+  margin-left: -10px;
+}
+li.searchButton:hover {
+  border-radius: 50px;
+  padding-bottom: -4px;
+  display: inline;
+}
+span.logo {
+  color: crimson;
+}
+div#topOptions {
+  display: inline;
+  vertical-align: middle;
+  float: right;
+}
+div#cartItemCount {
+  display: inline;
+  font-size: 13px;
+  background-color: crimson;
+  color: lightgrey;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: -7px;
+  vertical-align: top;
+}
+
+div.banner {
+  z-index: 0;
+  color: lightgrey;
+  display: flex;
+  position: relative;
+  margin-top: 40px;
+  width: 100%;
+  height: 250px;
+  background-color: darkslategray;
+}
+
+p.bannerDesc {
+  padding-left: 80%px;
+  padding-top: 3px;
+  text-align: left;
+  vertical-align: middle;
+}
+p.bannerLogo {
+  float: left;
+  font-size: 20px;
+  padding-top: 1%;
+  padding-left: 8%;
+  padding-bottom: 2%;
+}
+span.digi {
+  padding-left: 20px;
+  font-size: 93px;
+}
+span.store {
+  font-size: 93px;
+  color: crimson;
+}
+pre {
+  font-size: 15px;
+  vertical-align: middle;
+}
+span.discStore {
+  color: crimson;
+}
+nav.filters {
+  margin-top: 5px;
+  background: rgb(255, 240, 240);
+  width: 20%;
+  height: fit-content;
+  float: left;
+  min-width: 140px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 3rem;
+}
+nav.filters ul li {
+  list-style-type: none;
+  color: darkslategray;
+}
+div.mainDiv {
+  display: flex;
+}
+p.filterCat {
+  display: block;
+  color: darkslategray;
+  font-size: 20px;
+  border-color: dimgray;
+
+  margin-top: 0px;
+
+  margin-left: -40px;
+  background-color: lightgrey;
+  padding-right: 78%;
+  font-weight: bolder;
+}
+p.filter {
+  display: block;
+  color: lightgrey;
+  font-size: 20px;
+  border-color: dimgray;
+  border-radius: 7px;
+  padding-top: 7px;
+  margin-top: 0px;
+  margin-bottom: 0%;
+  padding-bottom: 7px;
+  background-color: darkslategray;
+  padding-right: 78%;
+  font-weight: bolder;
+}
+
+li.price input {
+  width: 50px;
+}
+nav.filters button {
+  margin-left: 60%;
+  background-color: darkslategray;
+  color: lightgrey;
+  margin-top: 12px;
+}
+nav.filters button:hover {
+  margin-left: 60%;
+  background-color: darkslategray;
+  color: lightgrey;
+  margin-top: 12px;
+  width: 26%;
+}
+main {
+  color: darkslategray;
+  width: 75%;
+  margin-left: 200px;
+  margin-left: 25%;
+  min-height: calc(100vh - 200px);
+}
+div.mainTitle {
+  margin-top: 5px;
+  font-size: 25px;
+  color: darkslategrey;
+}
+div#mainLable {
+  font-size: 18px;
+}
+div.sortDiv {
+  text-align: right;
+}
+
+div.applyDiv {
+  display: flex;
+  justify-content: space-between;
+}
+ul.applyUl {
+  width: 300px;
+  display: inline-block;
+  padding: 5%;
+  color: darkslategray;
+  text-align: center;
+}
+ul.applyUl:hover {
+  background: rgb(255, 240, 240);
+}
+img.image {
+  width: 250px;
+}
+li.applyLiTitle {
+  font-size: 120%;
+  font-weight: bolder;
+}
+li.applyLiPrice {
+  color: red;
+}
+button.applyAddToCart {
+  background-color: darkslategrey;
+  color: lightgray;
+  margin-top: 6px;
+  border-radius: 3px;
+  padding: 4px 20px;
+}
+button.applyCartRemove {
+  background-color: darkslategrey;
+  color: lightgray;
+  margin-top: 6px;
+  border-radius: 3px;
+  padding: 4px 20px;
+}
+button.applyMakePayment {
+  background-color: darkslategrey;
+  color: lightgray;
+  margin-top: 6px;
+  border-radius: 3px;
+  padding: 4px 20px;
+}
+body#contactBody {
+  background-color: rgb(255, 240, 240);
+}
+div#contactMain {
+  background-color: rgb(255, 240, 240);
+}
+div#formDiv {
+  background-color: white;
+  width: 80%;
+  margin: 2% 10%;
+  padding: 20px;
+}
+
+footer {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  background: darkslategray;
+  height: 170px;
+  border-top: dimgray solid 3px;
+  display: grid;
+  width: 100%;
+  color: lightgrey;
+}
+div.socialMedia {
+  text-align: end;
+
+  float: right;
+  width: fit-content;
+}
+div.footerLogo {
+  margin-top: 3%;
+  font-size: 24px;
+  float: left;
+  text-align: left;
+  width: fit-content;
+}
+p#copyright {
+  float: left;
+  width: fit-content;
+}
+form#subForm {
+  float: right;
+  margin-top: 1%;
+  width: fit-content;
+}
+input#subBar {
+  border-color: teal;
+  border-radius: 7px;
+  float: right;
+}
+input#subButton {
+  background-color: darkslategray;
+  color: lightgrey;
+  float: right;
+}
+#contactP {
+  font-size: 140%;
+  color: darkslategray;
+  margin-left: 10%;
+}
+#contactMain {
+  min-height: calc(100vh - 200px);
+}
+.label {
+  color: darkslategray;
+  font-weight: bold;
+}
+.input {
+  border-color: teal;
+  border-radius: 4px;
+  width: 50%;
+}
+.errorMessage {
+  font-size: small;
+  font-weight: lighter;
+  color: lightslategray;
+}
+.legend {
+  border: teal;
+  display: inline;
+  color: darkslategray;
+  font-weight: bold;
+}
+fieldset {
+  border-color: teal;
+  border-radius: 4px;
+}
+.contactButton {
+  background-color: darkslategray;
+  color: lightgrey;
+}
+#orderNumberDiv {
+  display: none;
+}
+#orderNumberDiv label {
+  margin-left: 20px;
+}
+#orderNumberDiv input {
+  margin-left: 20px;
+}
+.reason {
+  display: inline;
+}
+.radioOption {
+  display: inline;
+  padding: 0px;
+}
+.fieldsetDiv {
+  padding: 20px;
+}
+
+@media screen and (max-width: 1130px) {
+  pre {
+    display: none;
+  }
+  main {
+    font-size: 120%;
+  }
+  ul.applyUl {
+    width: 70%;
+    display: inline-block;
+    padding: 5%;
+    color: darkslategray;
+    text-align: center;
+  }
+  img.image {
+    width: 350px;
+  }
+  li.applyLiTitle {
+    font-size: 140%;
+    font-weight: bolder;
+  }
+
+  button.applyAddToCart {
+    font-size: 120%;
+    border-radius: 3px;
+    padding: 8px 40px;
+  }
+
+  button.applyCartRemove {
+    font-size: 120%;
+    border-radius: 3px;
+    padding: 8px 40px;
+  }
+  button.applyMakePayment {
+    font-size: 120%;
+    border-radius: 3px;
+    padding: 8px 40px;
+  }
+  div.sortDiv {
+    font-size: 120%;
+  }
+  select#sort {
+    font-size: 80%;
+    padding: 8px;
+    background-color: darkslategray;
+    color: lightgray;
+  }
+  nav.responsive {
+    margin-left: 0;
+    background: rgb(255, 240, 240);
+    width: 40%;
+    height: fit-content;
+    float: left;
+    min-width: 140px;
+    position: -webkit-sticky;
+    position: sticky;
+    margin-top: 0px;
+  }
+  nav.responsive ul {
+    text-align: center;
+    padding-left: 0px;
+  }
+  nav.responsive ul li {
+    list-style-type: none;
+    border: crimson;
+    border-width: 5px;
+  }
+  nav.category {
+    display: none;
+  }
+  nav.navMenu {
+    display: inline;
+    float: left;
+  }
+  header {
+    font-size: 50px;
+    display: block;
+    height: 80px;
+    width: 100%;
+  }
+
+  p.logoHeader {
+    font-size: 50px;
+  }
+  img#menuImage {
+    width: 75px;
+  }
+
+  input#search {
+    border-radius: 10px;
+    display: inline;
+    vertical-align: top;
+    font-size: 35px;
+    height: 50px;
+    width: 270px;
+  }
+  img.searchButton {
+    width: 60px;
+    vertical-align: top;
+  }
+  img#profileIcon {
+    width: 70px;
+  }
+  img#cartIcon {
+    width: 70px;
+  }
+  span.logo {
+    color: crimson;
+  }
+  div#topOptions {
+    display: inline;
+    vertical-align: middle;
+    float: right;
+  }
+}

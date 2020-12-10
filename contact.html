@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>DigiStore</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body id="contactBody">
+    <header>
+        <p class="logoHeader">
+           <img class="logoHead" src="images/logo.png" alt="Digi Shop Logo" width="40px" />
+            Digi<span class="logo">Store</span>
+         </p>
+       <div id="topOptions">  
+         <div class="searchDiv">
+           <input type="text" id="search" value="">
+           <img class="searchButton" src="images/red-magnifying-glass-clipart-1.png" width="20px" onclick="searchBar()" alt="">
+         </div> 
+         <img id="profileIcon" src="images/LoginIconAppl.png" alt="Profile Logo" width="30px">
+         <img id="cartIcon" src="images/cart2.png" alt="cart logo" width="30px" onclick="cart()">
+       </div>
+       <nav class="navMenu" onclick="menu()">
+         <img id="menuImage" src="images/menu-icon2.png" width="30px" alt="menu">
+       </nav>
+       <nav id="cat" class="category">
+         <ul>
+           <li><a href="./index.html">Home</a></li>
+           <li><a href="./contact.html">Contact</a></li>
+         </ul>
+       </nav>
+       </header>
+    <div class="banner">
+      <p class="bannerLogo">
+        <img src="images/logo.png" alt="banner" width="170px">
+        <span class="digi">Digi</span><span class="store">Store</span>
+        <pre> 
+
+
+
+
+
+          Welcome to Digi<span class="descStore">Store</span>. 
+          Here you can buy Phone, Tablet and, 
+          Laptops of your favorite brand at best prices
+        </pre>
+      </p>
+
+        
+
+      
+    </div>
+    <div id="contactMain">
+        <p id="contactP"> Contact Us:</p>
+        <div id="formDiv">
+            <form id="conatctForm" action="https://httpbin.org/post" method="post">
+
+                <div>
+                    <fieldset class="fieldsetDiv">
+                    <legend class="legend">Name</legend>
+                  <div class="div">
+                    <div class="label">
+                    <label for="first"><span class="asterisk">*</span> First Name</label>
+                </div>
+                    <input
+                      class="input"
+                      id="first"
+                      name="first"
+                      autocomplete="given-name"
+                      type="text"
+                      autofocus
+                      tabindex="1"
+                      required
+                    >
+                  </div>
+                  <div class="div">
+                      <div class="label">
+                    <label for="last"><span class="asterisk">*</span> Last Name</label>
+                </div>
+                    <input
+                      class="input"
+                      id="last"
+                      name="last"
+                      autocomplete="family-name"
+                      type="text"
+                      tabindex="2"
+                      required
+                    >
+                  </div>
+                </fieldset>
+                </div>
+                
+                <div class="fieldsetDiv">
+                  <div class="label">
+                    <label for="email"><span class="asterisk">*</span> Email Address</label>
+                  </div>
+                    <input
+                      id="email"
+                      class="input"
+                      name="email"
+                      autocomplete="email"
+                      type="email"
+                      tabindex="3"
+                      required
+                    >
+                 </div>
+
+                 <fieldset class="fieldsetDiv">
+                     <legend class="legend">Address</legend>
+                
+                  <div class="div">
+                      <div class="label">
+                    <label for="address"><span class="asterisk">*</span> Street Address</label>
+                </div>
+                    <input
+                      id="address"
+                      class="input"
+                      name="address"
+                      autocomplete="street-address"
+                      type="text"
+                      tabindex="4"
+                      required
+                    >
+                  </div>
+                
+        
+                
+                  <div class="div">
+                    <div class="label">
+                    <label for="city"><span class="asterisk">*</span> City</label>
+                </div>
+                    <input
+                      id="city"
+                      class="input"
+                      name="city"
+                      autocomplete="address-level2"
+                      type="text"
+                      tabindex="5"
+                      required
+                    >
+                  </div>
+                  <div class="div">
+                      <div class="label">
+                    <label for="postalCode"><span class="asterisk">*</span> Postal Code</label>
+                </div>
+                    <input
+                      id="postalCode"
+                      class="input"
+                      name="postalCode"
+                      autocomplete="postal-code"
+                      type="text"
+                      tabindex="6"
+                      placeholder="L6P 2A1"
+                      pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$"
+                      required
+                    >
+                    <div class="errorMessage">
+                      Enter a valid Canadian Postal Code
+                    </div>
+                  </div>
+                
+            </fieldset>
+                <div class="fieldsetDiv">
+                  <div class="reason">
+                    <label class="label"><span class="asterisk">*</span> Reason:</label>
+                </div>
+                    <div class="radioOption">
+                      <input class="radio" type="radio" name="reason" id="question" value="question" checked tabindex="11" onclick="resetProblem()">
+                      <label class="label" for="question">Question</label>
+                    </div>
+                    <div class="radioOption">
+                      <input class="radio" type="radio" name="reason" id="comment" value="comment" tabindex="12" onclick="resetProblem()">
+                      <label class="label" for="comment">Comment</label>
+                    </div>
+                    <div class="radioOption">
+                      <input class="radio" type="radio" name="reason" id="problem" value="problem" tabindex="13" onclick="orderProblem()">
+                      <label class="label" for="problem">Order Problem</label>
+                    </div>
+                  
+                </div>
+                <div id="orderNumberDiv" class="fieldsetDiv">
+                    <div class="label">
+                      <label for="orderNumber"><span class="asterisk">*</span> Order Number</label>
+                    </div>
+                      <input
+                        id="orderNumber"
+                        class="input"
+                        name="orderNumber"
+                        type="text"
+                        tabindex="6"
+                        required
+                      >
+                   </div>
+  
+                <div class="fieldsetDiv">
+                  <div class="label">
+                    <label for="description">Description</label>
+                </div>
+                    <textarea
+                      id="description"
+                      class="input"
+                      name="description"
+                      rows="5"
+                      tabindex="7"
+                    ></textarea>
+                  
+                </div>
+                <div class="owner">
+                    <div class="div">
+                      <label for="ownerName" hidden>Owner Name</label>
+                      <input
+                        class="input"
+                        id="ownerName"
+                        name="ownerName"
+                        type="text"
+                        value="Mandeep Kumar"
+                        tabindex="8"
+                        hidden
+                        >
+                    </div>
+                  </div>
+                <div>
+                  <input class="contactButton" type="submit" name="submit" value="Submit" tabindex="15">
+                  <input class="contactButton" type="reset" name="reset" value="Reset" tabindex="16" onclick="resetProblem()">
+                </div>
+              </form>
+        </div>
+
+
+
+
+
+    </div>
+    <footer>
+        <div>
+          <div class="footerLogo">
+            <img src="images/logo.png" alt="Digi Shop Logo" width="35px" />
+            Digi<span class="logo">Store</span>
+          </div>
+        <div>
+        <form id="subForm" action="https://formspree.io/f/mzbkaqqv" method="POST">
+          <input type="email" id="subBar" name="_replyto" placeholder="Enter email address">
+          <input type="submit" id="subButton" value="Subscribe">
+        </form>
+      </div>
+    </div>
+    <div>
+      <p id="copyright">&copy; 2020 Mandeep Kumar</p>
+        <div class="socialMedia">
+          Contact Us:
+          <a href="https://www.facebook.com/"><img src="images/facebook_logos_PNG19751.png" width="33px" alt=""></a>
+          <a href="https://www.twitter.com/"><img src="images/twitter-squared.png" width="40px" alt=""></a>
+          <a href="https://www.instagram.com/"><img src="images/intagram logo.png" width="33px" alt=""></a>
+          <a href="https://www.linkedin.com/"><img src="images/linkedin-icon.png" width="38px" alt=""></a>
+        </div>
+        
+      </div>
+      </footer>
+    
+
+  </body>
+  <script src="script.js"></script>
+</html>
